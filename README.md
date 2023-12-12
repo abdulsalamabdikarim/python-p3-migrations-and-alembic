@@ -6,7 +6,7 @@
 - Manage database tables and schemas without ever writing SQL through Alembic.
 - Use SQLAlchemy to create, read, update and delete records in a SQL database.
 
-***
+---
 
 ## Key Vocab
 
@@ -21,7 +21,7 @@
 - **Migration**: the process of moving data from one or more databases to one
   or more target databases.
 
-***
+---
 
 ## Introduction
 
@@ -71,7 +71,7 @@ install this with the command `brew install tree`. WSL and Linux users can run
 Fork this lesson and code along to create your first automated migration
 environment with Alembic.
 
-***
+---
 
 ## Creating a Migration Environment
 
@@ -101,7 +101,7 @@ creating a migration- it defines the basic structure of a migration.
 Now that we have created our environment, we need to configure it to work with
 our SQLAlchemy app.
 
-***
+---
 
 ## Configuring a Migration Environment
 
@@ -158,7 +158,7 @@ directory structure matches the one below:
 └── models.py
 ```
 
-***
+---
 
 ## Generating our First Migration
 
@@ -177,7 +177,7 @@ directory. Here's what you should see inside:
 """Empty Init
 
 Revision ID: 6b9cb35ba46e
-Revises: 
+Revises:
 Create Date: 2022-08-04 13:21:26.936909
 
 """
@@ -230,7 +230,7 @@ to our SQLAlchemy app. When we make changes to data models, we can use Alembic
 to automatically generate migrations for us and upgrade the database
 accordingly.
 
-***
+---
 
 ## Autogenerating a Migration
 
@@ -365,10 +365,9 @@ current state of the database, and `students`, which contains all of the
 columns, keys, and constraints that we included in our model!
 
 ![Table `students` with columns: `id`, `name`, `email`,
-`grade`, `birthday`, and `enrolled_date`.](https://curriculum-content.s3.amazonaws.com/python/studentsdb.png
-"students table")
+`grade`, `birthday`, and `enrolled_date`.](https://curriculum-content.s3.amazonaws.com/python/studentsdb.png "students table")
 
-***
+---
 
 ## Conclusion
 
@@ -378,7 +377,7 @@ can handle most tasks automatically. That being said, Alembic can't do
 _everything_ on its own. In the next lesson, we will explore how to manually
 configure migrations and downgrade to revert to an earlier state.
 
-***
+---
 
 ## Solution code
 
@@ -430,7 +429,7 @@ target_metadata = Base.metadata
 
 ```
 
-***
+---
 
 ## Resources
 
